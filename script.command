@@ -1,9 +1,5 @@
 #!/bin/sh
 
-
-read -p "input [restore] to continue:" PASS
-
-if [$PASS -eq "0restore"]; then
     instruments -s devices \
      | grep Simulator \
      | grep -o "[0-9A-F]\{8\}-[0-9A-F]\{4\}-[0-9A-F]\{4\}-[0-9A-F]\{4\}-[0-9A-F]\{12\}" \
@@ -12,8 +8,13 @@ if [$PASS -eq "0restore"]; then
         xcrun simctl erase $line
     done
 
-    rm -f ~/Library/Developer/Xcode/DerivedData/*
-    rm -f ~/Library/Developer/Xcode/iOS\ DeviceSupport/*
+    rm -rf ~/Library/Developer/Xcode/DerivedData/*
+    rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport/*
+    rm -rf ~/Desktop/*
+    rm -rf ~/Downloads/*
+    rm -rf ~/.Trash
+    rm -rf ~/Library/Keychains/*
+    rm -rf ~/Library/Caches/Google/Chrome/Default/*
 echo "Completed Restoring"
-fi
+
 
