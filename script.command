@@ -16,6 +16,6 @@
     rm -rf ~/Library/Keychains/*
     rm -rf ~/Library/Caches/Google/Chrome/Default/*
     rm -rf ~/Library/Safari/*
-echo "Completed Restoring"
+echo Completed Restoring
 
 
