@@ -15,6 +15,9 @@
     rm -rf ~/.Trash
     rm -rf ~/Library/Keychains/*
     rm -rf ~/Library/Caches/Google/Chrome/Default/*
+    rm -rf ~/Library/Application\ Support/Google/Chrome/Profile\ 1/Application\ Cache/Cache/*
+    rm -rf ~/Library/Application\ Support/Google/Chrome/Profile\ 1/Cookies/*
+    rm -rf ~/Library/Application\ Support/Google/Chrome/System\ Profile/Cookies/*
     rm -rf ~/Library/Safari/*
 echo Completed Restoring
 
