@@ -14,9 +14,7 @@
     rm -rf ~/Downloads/*
     rm -rf ~/.Trash
     rm -rf ~/Library/Keychains/*
-    mkdir -p ~/Chrome\ Junk/
-    mv ~/Library/Application\ Support/Google/Chrome ~/Chrome\ Junk
-    rm -rf ~/Chrome\ Junk/
+    rm -rf ~/Library/Application\ Support/Google/Chrome/*    
     rm -rf ~/Library/Safari/*
 echo Completed Restoring
 
