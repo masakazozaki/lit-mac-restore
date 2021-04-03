@@ -14,8 +14,12 @@
     rm -rf ~/Downloads/*
     rm -rf ~/.Trash
     rm -rf ~/Library/Keychains/*
-    rm -rf ~/Library/Application\ Support/Google/Chrome/*    
+    rm -rf ~/Library/Application\ Support/Google/Chrome/*
     rm -rf ~/Library/Safari/*
+    rm -rf ~/Applications/MozerLessonApp.app
+    rm -rf ~/Library/Application\ Support/MozerLessonApp
+    rm ~/Library/Preferences/io.mozer.mozer-lesson-app.helper.plist
+    rm ~/Library/Preferences/io.mozer.mozer-lesson-app.plist
+    rm -rf ~/Library/Saved Application State/io.mozer.mozer-lesson-app.savedState
+
 echo Completed Restoring
-
-
