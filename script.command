@@ -46,4 +46,7 @@
     echo "Cleaning Adobe Cache Files..."
     sudo rm -rf ~/Library/Application\ Support/Adobe/Common/Media\ Cache\ Files/*
 
+    echo "Changing Wallpaper"
+    osascript -e 'tell application "System Events" to tell every desktop to set picture to "~/Desktop/lit-mac-restore/wallpaper.jpeg"'
+
 echo Completed Restoring
