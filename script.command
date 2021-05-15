@@ -19,10 +19,6 @@
     sudo rm -rfv ~/Library/Developer/Xcode/DerivedData/*
     sudo rm -rfv ~/Library/Developer/Xcode/iOS\ DeviceSupport/*
 
-    echo "Cleaning User Files..."
-    sudo rm -rfv ~/Desktop/*
-    sudo rm -rfv ~/Downloads/*
-    sudo rm -rfv ~/.Trash/*
     echo "Cleaning KeyChains"
     sudo rm -rfv ~/Library/Keychains/*
     echo "Cleaning Google Chrome..."
@@ -40,6 +36,12 @@
     sudo rm -rf ~/Library/Application\ Support/Adobe/Common/Media\ Cache\ Files/*
 
     echo "Changing Wallpaper"
-    osascript -e 'tell application "System Events" to tell every desktop to set picture to "~/Desktop/lit-mac-restore/wallpaper.jpeg"'
+    curl https://life-is-tech.com/materials/images/summer2021_navy.jpg > ~/Desktop/wallpaper.jpg
+    osascript -e 'tell application "System Events" to tell every desktop to set picture to "~/Desktop/wallpaper.jpg"'
+
+    echo "Cleaning User Files..."
+    sudo rm -rfv ~/Desktop/*
+    sudo rm -rfv ~/Downloads/*
+    sudo rm -rfv ~/.Trash/*
 
 echo Completed Restoring
