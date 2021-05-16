@@ -52,4 +52,5 @@
     osascript -e 'tell application "Finder" to empty trash' &>/dev/null
     osascript -e 'tell application "Finder" to set warns before emptying of trash to true' &>/dev/null
 
+    osascript -e 'display notification "書類フォルダにファイルが残っていないか確認してください。" with title "PC初期化が完了しました" sound name "alert"' &>/dev/null
 echo Completed Restoring
