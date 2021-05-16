@@ -21,17 +21,21 @@
 
     echo "Cleaning KeyChains"
     sudo rm -rfv ~/Library/Keychains/*
+
     echo "Cleaning Google Chrome..."
     sudo rm -rfv ~/Library/Application\ Support/Google/Chrome/Default/Application\ Cache/*
     sudo rm -rfv ~/Library/Application\ Support/Google/Chrome/*
+
     echo "Cleaning Saferi..."
     rm -rfv ~/Library/Safari/*
+
     echo "Cleaning Mozer..."
     sudo rm -rfv ~/Applications/MozerLessonApp.app
     sudo rm -rfv ~/Library/Application\ Support/MozerLessonApp
     sudo rm ~/Library/Preferences/io.mozer.mozer-lesson-app.helper.plist
     sudo rm ~/Library/Preferences/io.mozer.mozer-lesson-app.plist
     sudo rm -rfv ~/Library/Saved Application State/io.mozer.mozer-lesson-app.savedState
+
     echo "Cleaning Adobe Cache Files..."
     sudo rm -rf ~/Library/Application\ Support/Adobe/Common/Media\ Cache\ Files/*
 
@@ -42,6 +46,10 @@
     echo "Cleaning User Files..."
     sudo rm -rfv ~/Desktop/*
     sudo rm -rfv ~/Downloads/*
-    sudo rm -rfv ~/.Trash/*
+
+    echo "Cleaning Trash..."
+    osascript -e 'tell application "Finder" to set warns before emptying of trash to false' &>/dev/null
+    osascript -e 'tell application "Finder" to empty trash' &>/dev/null
+    osascript -e 'tell application "Finder" to set warns before emptying of trash to true' &>/dev/null
 
 echo Completed Restoring
