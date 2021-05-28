@@ -8,7 +8,7 @@ Life is TechのレンタルMacの初期化用shellスクリプト
 - [ ] Android エミュレーターのデータ削除
 - [x] Chrome/Safariのログアウト・履歴・ブックマーク削除
 - [x] (Mozerのあるコースのみ)Mozer教材の削除とMozer.app削除
-- [ ] （Adobe使用コース）Adobe Creative Cloudからのログアウト ※20春から追加
+- [x] （Adobe使用コース）Adobe Creative Cloudからのログアウト ※20春から追加
 - [x] ファイルの削除
 - [x] ゴミ箱の消去
 - [x] キーチェーンの削除
