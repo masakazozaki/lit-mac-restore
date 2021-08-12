@@ -1,15 +1,7 @@
 # lit-mac-restore
 Life is TechのレンタルMacの初期化用shellスクリプト
 
-## 自分のMacで実行すると悲惨なことになるので注意
+## `自分のMacで実行すると悲惨なことになるので注意`
 
-## 案件定義
-- [x] ビルドされたアプリ&(iPhoneコースのみ)Developerアカウントの削除
-- [ ] Android エミュレーターのデータ削除
-- [x] Chrome/Safariのログアウト・履歴・ブックマーク削除
-- [x] (Mozerのあるコースのみ)Mozer教材の削除とMozer.app削除
-- [x] （Adobe使用コース）Adobe Creative Cloudからのログアウト ※20春から追加
-- [x] ファイルの削除
-- [x] ゴミ箱の消去
-- [x] キーチェーンの削除
-- [x] デスクトップを整える
+## 使い方Docbase
+- https://docbase.io/posts/2037535/sharing/b029ab1a-3cc1-4e99-84c7-10ef20163dbd
