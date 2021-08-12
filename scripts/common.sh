@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Changing Wallpaper"
-curl -o $HOME/Desktop/wallpaper.jpg https://life-is-tech.com/materials/images/summer2021_navy.jpg
+curl -o $HOME/Desktop/wallpaper.jpg https://life-is-tech.com/materials/images/21sum-wallpaper-aquablue.jpg
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"$USER_HOME/Desktop/wallpaper.jpg\""
 
 echo "Cleaning KeyChains"
